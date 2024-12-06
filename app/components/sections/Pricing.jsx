@@ -79,10 +79,10 @@ function Pricing() {
 
     {/* Feedback Bonanza PLUS */}
           <div className="bg-purple-900 text-white p-6 shadow-lg flex flex-col h-full card-animated-border relative">
-      <div className="absolute top-7 right-1.5 bg-purple-700 text-xs font-bold px-2 py-1 rounded-full ">
+          <div className="absolute top-7 right-1.5 bg-purple-700 text-xs font-bold px-2 py-1 rounded-full  ">
         Most Popular
       </div>
-      <h2 className="text-xl font-bold mb-4">Feedback Bonanza PLUS</h2>
+      <h2 className="text-xl font-bold mb-4 pr-24">Feedback Bonanza PLUS </h2>
       <p className="text-sm mb-4">
       Live on X, YouTube, and Twitch, get professional reviews and a detailed report.
       </p>

@@ -139,3 +139,20 @@
     @apply bg-background text-foreground;
   }
 }
+/* Prevent horizontal scrolling, but allow vertical scrolling */
+body {
+  overflow-x: hidden;  /* Hide horizontal scrolling */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Ensure no margin */
+  padding: 0; /* Ensure no padding */
+}
+
+/* Ensuring the fixed container spans the full screen */
+html, body, #__next {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
