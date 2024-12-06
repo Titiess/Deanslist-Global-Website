@@ -51,7 +51,7 @@ const Events = () => {
 						<p className="text-base mb-6">
 							The community-run conference focused on DAOs and digital Governance Tools. Experience the highlights of AthensDAOx conference!
 						</p>
-						<a href="##" className='w-full' target="blank"  rel="noopener noreferrer"><button className=" bg-[#0A1494] px-3 py-2 rounded-full font-semibold w-full md:w-fit h-fit hover:bg-blue-600 transition">
+						<a href="https://island-dao.com/" className='w-full' target="blank"  rel="noopener noreferrer"><button className=" bg-[#0A1494] px-3 py-2 rounded-full font-semibold w-full md:w-fit h-fit hover:bg-blue-600 transition">
 							Explore the fun!
 						</button>
 						</a>
@@ -83,7 +83,7 @@ const Events = () => {
 						<p className="text-base mb-6">
 							A one month co-working event on the Island, Experience the highlights of IslandDAOx lives event! Presented by DeanslistDAO
 						</p>
-						<a href="#" target="blank"  rel="noopener noreferrer" className="w-full"><button className=" bg-[#081E20] px-3 py-2 rounded-full font-semibold w-full md:w-fit h-fit hover:bg-gray-600 transition">
+						<a href="https://island-dao.com/" target="blank"  rel="noopener noreferrer" className="w-full"><button className=" bg-[#081E20] px-3 py-2 rounded-full font-semibold w-full md:w-fit h-fit hover:bg-gray-600 transition">
 							Explore the fun!
 						</button>
 						</a>
