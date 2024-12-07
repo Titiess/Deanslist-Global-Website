@@ -36,7 +36,7 @@ function AboutUs() {
 			 </div>
 
 			 {/*Right content*/}
-				<div className="p-5 text-sm text-purple-200">
+				<div className="p-5 text-sm text-white">
 			 <div>
 						<h3>Dean&apos;s List is a Service DAO consisting of Web3 power users who provide valuable <br /> feedback sessions, as well as a variety of other services and consultation to <br /> projects wishing to succeed in the space, or simply seeking to refine their products <br />for an overall better UX.</h3>
 			 </div>

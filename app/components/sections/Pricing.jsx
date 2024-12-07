@@ -95,7 +95,7 @@ function Pricing() {
                 </li>
               ))}
       </ul>
-      <hr className="border-t-2 border-gray-600 my-6 mt-20" />
+      <hr className="border-t-2 border-gray-600 my-6 mt-14 " />
       <div className="mt-auto flex flex-col md:flex-row md:justify-center items-center">
         <p className="text-3xl font-bold">
           $1499 <span className="text-sm">per session</span>
