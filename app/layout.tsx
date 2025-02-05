@@ -1,16 +1,19 @@
 import { Inter } from 'next/font/google';
 import localFont from "next/font/local";
 import "./globals.css";
+import NavBar from './components/sections/NavBar';
+import Footer from './components/sections/Footer';
+import FooterMobile from './components/sections/FooterMobile';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 const newEditorial = localFont({
   src: [
     {
-       path: "./fonts/EditorialNew-Italic.otf",
-       weight: "400",
-       style: "italic",
-     },
+      path: "./fonts/EditorialNew-Italic.otf",
+      weight: "400",
+      style: "italic",
+    },
     {
       path: "./fonts/EditorialNew-UltralightItalic.otf",
       weight: "300",
@@ -33,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="A Network State Of Web3 Power users" />
@@ -51,7 +54,10 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${newEditorial.variable} antialiased bg-[#090118] text-white font-inter`}
       >
+        <NavBar />
         {children}
+        <Footer />
+        <FooterMobile />
       </body>
     </html>
   );

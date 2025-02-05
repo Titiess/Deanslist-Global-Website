@@ -88,8 +88,7 @@ const NavBar: React.FC = () => {
                         </li>
                         <li className="hover:text-[#D896F7]">
                             <Link
-                                href="https://leaderboard.deanslist.services/leaderboard"
-                                target="_blank"
+                                href="./leaderboard"
                                 className="flex items-center gap-1"
                             >
                                 Leaderboard
