@@ -15,10 +15,10 @@ function Footer() {
         {/* Top middle content */}
         <nav className="flex flex-col sm:flex-row text-center sm:space-x-4 gap-3 sm:gap-7">
           <a href="#hero" className="hover:text-gray-300">Home</a>
-          <a href="#services" className="hover:text-gray-300">Services</a>
-          <a href="#about-us" className="hover:text-gray-300">About Us</a>
-          <a href="#events" className="hover:text-gray-300">Events</a>
-          <a href="https://leaderboard.deanslist.services/leaderboard " target="blank" className="hover:text-gray-300">Leaderboard</a>
+          <a href="/#services" className="hover:text-gray-300">Services</a>
+          <a href="/#about-us" className="hover:text-gray-300">About Us</a>
+          <a href="/#events" className="hover:text-gray-300">Events</a>
+          <a href="/leaderboard" target="blank" className="hover:text-gray-300">Leaderboard</a>
         </nav>
 
         {/* Top right content */}

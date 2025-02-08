@@ -75,16 +75,16 @@ const NavBar: React.FC = () => {
                 <nav className="hidden lg:block">
                     <ul className="flex space-x-10 font-semibold">
                         <li>
-                            <Link className="hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7]" href="#">Home</Link>
+                            <Link className="hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7]" href="/">Home</Link>
                         </li>
                         <li>
-                            <Link className="hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7]" href="#services">Services</Link>
+                            <Link className="hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7]" href="/#services">Services</Link>
                         </li>
                         <li className="hover:text-[#D896F7]">
-                            <Link className="hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7]" href="#about-us">About Us</Link>
+                            <Link className="hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7]" href="/#about-us">About Us</Link>
                         </li>
                         <li className="hover:text-[#D896F7]">
-                            <Link className="hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7]" href="#events">Events</Link>
+                            <Link className="hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7]" href="/#events">Events</Link>
                         </li>
                         <li className="hover:text-[#D896F7]">
                             <Link
@@ -119,36 +119,35 @@ const NavBar: React.FC = () => {
                     >
                         <div className="space-y-2 px-3 py-3">
                             <Link
-                                href="#"
+                                href="/"
                                 className="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-200"
                                 onClick={toggleMenu}
                             >
                                 Home
                             </Link>
                             <Link
-                                href="#services"
+                                href="/#services"
                                 className="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-200"
                                 onClick={toggleMenu}
                             >
                                 Services
                             </Link>
                             <Link
-                                href="#about-us"
+                                href="/#about-us"
                                 className="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-200"
                                 onClick={toggleMenu}
                             >
                                 About Us
                             </Link>
                             <Link
-                                href="#events"
+                                href="/#events"
                                 className="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-200"
                                 onClick={toggleMenu}
                             >
                                 Events
                             </Link>
                             <Link
-                                href="https://leaderboard.deanslist.services/"
-                                target="_blank"
+                                href="/leaderboard"
                                 className="block rounded-md px-3 py-2 text-base font-medium hover:bg-gray-200"
                                 onClick={toggleMenu}
                             >

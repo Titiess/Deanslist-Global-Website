@@ -12,10 +12,10 @@ export default function FooterMobile() {
             <div className='flex justify-between px-10'>
                 <nav>
                     <ul className='flex flex-col space-y-5'>
-                        <a href="#hero" className='hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7]'>Home</a>
-                        <a href="#about-us" className='hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7]'>About us</a>
-                        <a href="#events" className='hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7]'>Events</a>
-                        <a href="#services" className='hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7]'>Services</a>
+                        <a href="/#hero" className='hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7]'>Home</a>
+                        <a href="/#about-us" className='hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7]'>About us</a>
+                        <a href="/#events" className='hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7]'>Events</a>
+                        <a href="/#services" className='hover:text-[#D896F7] active:text-[#D896F7] focus:text-[#D896F7]'>Services</a>
                     </ul>
                 </nav>
 
