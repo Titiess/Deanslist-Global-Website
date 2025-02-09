@@ -27,7 +27,7 @@ const LeaderboardPage: React.FC = () => {
           The latest ranking from our DAO
         </h1>
         <h3 className="text-[#94969C]">
-          The latest perks for top governance holders and NFT staking.
+          The latest perk for top governance holders and NFT staking.
         </h3>
       </div>
 
