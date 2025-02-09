@@ -13,6 +13,7 @@ const LeaderboardPage: React.FC = () => {
       </div>
       <div className="relative  self-start">
 
+
         <div className="absolute hidden md:block  h-[702px] w-[87px] bg-[#9A59BA] rounded-[100%]  top-[19rem] -left-[4rem] rotate-[45deg] blur-[120px] -z-11"></div>
       </div>
       <div className="relative  self-end">
