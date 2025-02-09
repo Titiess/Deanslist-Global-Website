@@ -7,17 +7,17 @@ import { MdEmojiEvents } from "react-icons/md";
 const LeaderboardPage: React.FC = () => {
   return (
     <div className="relative flex flex-col items-center bg-[#090118] min-h-screen py-10  ">
-      <div className="relative border self-start">
+      <div className="relative   self-start">
 
-        <div className="absolute hidden md:block  h-[202px] w-[177px] bg-[#9A59BA] rounded-[100%] border -top-[15rem] -left-[4rem] rotate-[45deg] blur-[120px] -z-100"></div>
+        <div className="absolute hidden md:block  h-[202px] w-[177px] bg-[#9A59BA] rounded-[100%]  -top-[15rem] -left-[4rem] rotate-[45deg] blur-[120px] -z-100"></div>
       </div>
-      <div className="relative border self-start">
+      <div className="relative  self-start">
 
-        <div className="absolute hidden md:block  h-[702px] w-[87px] bg-[#9A59BA] rounded-[100%] border top-[19rem] -left-[4rem] rotate-[45deg] blur-[120px] -z-11"></div>
+        <div className="absolute hidden md:block  h-[702px] w-[87px] bg-[#9A59BA] rounded-[100%]  top-[19rem] -left-[4rem] rotate-[45deg] blur-[120px] -z-11"></div>
       </div>
-      <div className="relative border self-end">
+      <div className="relative  self-end">
 
-        <div className="absolute hidden md:block  h-[1102px] w-[177px] bg-[#9A59BA] rounded-[100%] border -top-[20rem] -left-[4rem] rotate-[deg] blur-[150px] -z-100"></div>
+        <div className="absolute hidden md:block  h-[1102px] w-[177px] bg-[#9A59BA] rounded-[100%]  -top-[20rem] -left-[4rem] rotate-[deg] blur-[150px] -z-100"></div>
       </div>
       {/* Page Heading */}
       <div className="text-center mt-10 ">
@@ -105,11 +105,11 @@ const LeaderboardPage: React.FC = () => {
 
       {/* Leaderboard Table */}
       <LeaderboardTable />
-      <div className="absolute bottom-0  self-start h-[500px] overflow-hidden w-[700px]">
+      <div className="absolute bottom-0  self-start h-[0px] overflow-x-visible  w-[00px]">
         <div className="relative  h-full self-start">
 
-        <div className="absolute  hidden md:block  h-[402px] w-[37px] bg-[#9A59BA] rounded-[100%] border -bottom-[4rem] left-[rem] rotate-[deg] blur-[150px] -z-100"></div>
-        <div className="absolute  hidden md:block  h-[50px] w-[457px] bg-[#9A59BA] rounded-[100%] border bottom-0 left-[rem]  blur-[150px] -z-100"></div>
+        <div className="absolute  hidden md:block  h-[402px] w-[37px] bg-[#9A59BA] rounded-[100%]  -bottom-[4rem] left-[rem] rotate-[deg] blur-[150px] -z-100"></div>
+        <div className="absolute  hidden md:block  h-[50px] w-[157px] bg-[#9A59BA] rounded-[100%]  bottom-0 left-[rem]  blur-[150px] -z-100"></div>
         </div>
       </div>
     </div>
