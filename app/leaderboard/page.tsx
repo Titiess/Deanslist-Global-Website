@@ -6,10 +6,21 @@ import { MdEmojiEvents } from "react-icons/md";
 
 const LeaderboardPage: React.FC = () => {
   return (
-    <div className="flex flex-col items-center bg-[#090118] min-h-screen py-10">
-      
+    <div className="relative flex flex-col items-center bg-[#090118] min-h-screen py-10  ">
+      <div className="relative border self-start">
+
+        <div className="absolute hidden md:block  h-[202px] w-[177px] bg-[#9A59BA] rounded-[100%] border -top-[15rem] -left-[4rem] rotate-[45deg] blur-[120px] -z-100"></div>
+      </div>
+      <div className="relative border self-start">
+
+        <div className="absolute hidden md:block  h-[702px] w-[87px] bg-[#9A59BA] rounded-[100%] border top-[19rem] -left-[4rem] rotate-[45deg] blur-[120px] -z-11"></div>
+      </div>
+      <div className="relative border self-end">
+
+        <div className="absolute hidden md:block  h-[1102px] w-[177px] bg-[#9A59BA] rounded-[100%] border -top-[20rem] -left-[4rem] rotate-[deg] blur-[150px] -z-100"></div>
+      </div>
       {/* Page Heading */}
-      <div className="text-center mt-10">
+      <div className="text-center mt-10 ">
         <h4 className="font-light text-[#C4C4C4] text-lg font-light font-editorial-new">Leaderboard</h4>
         <h1 className="font-bold text-[40px] text-white">
           The latest ranking from our DAO
@@ -20,8 +31,8 @@ const LeaderboardPage: React.FC = () => {
       </div>
 
       {/* Leaderboard Boost Section */}
-      <div className="w-[75%] mx-auto flex flex-row justify-between border-2 border-[#C787E6] rounded-lg mt-[50px] p-2  ">
-        <div className="pt-4"> 
+      <div style={{backgroundImage:'linear-gradient(to right, #3C1B51 , #090118)'}} className="w-[75%] z-20 bg-[] mx-auto flex flex-row justify-between border-[2px] border-[#C787E6] rounded-lg mt-[50px] p-2">
+        <div className="pt-4">
           <h5 className="text-white text-lg font-semibold ">Leaderboard Boost:</h5>
           <div className="flex items-center gap-2 mt-2">
             <FaBolt className="text-blue-400 text-lg" />
@@ -35,11 +46,11 @@ const LeaderboardPage: React.FC = () => {
               Governance Multiplier
             </h4>
             <span className="flex flex-row justify-between bg-blue-500 text-white text-sm px-[6px] py-[2px] rounded-2xl  gap-[2px]"
-             style={{
-              backgroundImage:
-                "linear-gradient(90deg, #015570, #22C5F9)",
-            }}>
-            <FaBolt className="text-white text-sm mt-[5px]" />1.0x
+              style={{
+                backgroundImage:
+                  "linear-gradient(90deg, #015570, #22C5F9)",
+              }}>
+              <FaBolt className="text-white text-sm mt-[5px]" />1.0x
             </span>
           </div>
           <div className="flex items-center gap-2 mt-2">
@@ -54,11 +65,11 @@ const LeaderboardPage: React.FC = () => {
               NFT Multiplier
             </h4>
             <span className="flex flex-row justify-between bg-purple-500 text-white text-sm px-[6px] py-[1.5px] rounded-2xl  gap-[2px]"
-            style={{
-              backgroundImage:
-                "linear-gradient(90deg, #3B1A51, #853BB7)",
-            }}>
-            <FaBolt className="text-white text-sm mt-[5px]" />1%
+              style={{
+                backgroundImage:
+                  "linear-gradient(90deg, #3B1A51, #853BB7)",
+              }}>
+              <FaBolt className="text-white text-sm mt-[5px]" />1%
             </span>
           </div>
           <p className="text-[#C4C4C4] mt-2 text-sm pt-4">
@@ -68,16 +79,16 @@ const LeaderboardPage: React.FC = () => {
 
         <div className="flex flex-col items-center">
           <CountdownTimer targetDate="2025-02-10T00:00:00Z" />
-         
+
         </div>
       </div>
 
-      
-       {/* Rewards Section */}
-       <div className="w-[75%] mx-auto flex flex-row justify-between border-2 border-[#BDECC333] rounded-lg mt-[20px] p-8 bg-[#061E1EBA]">
+
+      {/* Rewards Section */}
+      <div className="w-[75%] z-20 mx-auto flex flex-row justify-between border-2 border-[#BDECC333] rounded-lg mt-[20px] p-8 bg-[#061E1EBA] ">
         <div>
           <h5 className="text-[#BDECC3] font-semibold text-lg flex items-center gap-2">
-            <FaPlaneDeparture className="text-blue-300 text-xl" />
+            <FaPlaneDeparture className="text-blue-300 text-xl " />
             Top 5: Free Trip to ThailandDAO
           </h5>
           <h4 className="text-white text-lg mt-1 flex items-center gap-2">
@@ -87,13 +98,20 @@ const LeaderboardPage: React.FC = () => {
         </div>
 
 
-        
-          <img src="island.png" alt="" className="w-[82px] h-[82px] border-2 border-[#BDEBC3] rounded-full flex items-center justify-center " />
-        </div>
-      
+
+        <img src="island.png" alt="" className="w-[82px] h-[82px] border-2 border-[#BDEBC3] rounded-full flex items-center justify-center " />
+      </div>
+
 
       {/* Leaderboard Table */}
       <LeaderboardTable />
+      <div className="absolute bottom-0  self-start h-[500px] overflow-hidden w-[700px]">
+        <div className="relative  h-full self-start">
+
+        <div className="absolute  hidden md:block  h-[402px] w-[37px] bg-[#9A59BA] rounded-[100%] border -bottom-[4rem] left-[rem] rotate-[deg] blur-[150px] -z-100"></div>
+        <div className="absolute  hidden md:block  h-[50px] w-[457px] bg-[#9A59BA] rounded-[100%] border bottom-0 left-[rem]  blur-[150px] -z-100"></div>
+        </div>
+      </div>
     </div>
   );
 };
