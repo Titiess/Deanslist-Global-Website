@@ -2,6 +2,7 @@
 
 import SectionHeader from "../ui/SectionHeader";
 import ReactPlayer from "react-player";
+import Image from "next/image";
 
 const Services = () => {
 
@@ -36,9 +37,10 @@ const Services = () => {
                             Our goal is to make your product user-friendly with top-notch functionality <br /> that meets industry standards.
                         </p>
                     </div>
-                    <div className="w-full max-h-[165px] items-baseline">
-                        <img src="/images/feedback-review.svg" alt="feedback review" className="w-full" />
-                    </div>
+                    <div className="w-full max-h-[165px]">
+            <Image src="/images/feedback-review.svg" alt="feedback review" width={500} height={165} className="w-full" />
+          </div>
+
 
                 </div>
 
@@ -52,9 +54,10 @@ const Services = () => {
                             Empowering projects with grants to support innovative, solution-driven development tailored for DAO.
                         </p>
                     </div>
-                    <div className="flex flex-wrap space-x-2 space-y-2 mt-4">
-                        <img src="/images/feedback3.png" alt="feedback" />
-                    </div>
+                    <div className="flex flex-wrap mt-4">
+            <Image src="/images/feedback3.png" alt="feedback" width={500} height={300} />
+          </div>
+
                 </div>
 
                 <div className="grid grid-cols-1 md:col-span-2 gap-4 md:grid-cols-[40%,1fr]">
@@ -68,10 +71,10 @@ const Services = () => {
                             The collective knowledge of our power users ensures that each project is assessed with a keen understanding
                             of the Web3 ecosystem.
                         </p>
-                        <div className="flex relative justify-center items-center flex-grow h-[200px]">
-                            {/* Hackathon Badges */}
-                            <img src="/images/hackathon-judging.svg" alt="hackathon judging" />
-                        </div>
+                        <div className="relative flex justify-center items-center flex-grow h-[200px]">
+              <Image src="/images/hackathon-judging.svg" alt="hackathon judging" width={500} height={200} />
+            </div>
+
                     </div>
 
                     {/* Feedback Bonanza */}
@@ -84,9 +87,10 @@ const Services = () => {
                             insights to help you refine and elevate your product.
                         </p>
                         <div className="relative w-full h-full grid grid-cols-[30%,1fr] gap-1">
-                            <div className="py-2">
-                                <img src="/images/feedback-bonanza.svg" alt="feedback bonanza" />
-                            </div>
+                        <div className="py-2">
+                <Image src="/images/feedback-bonanza.svg" alt="feedback bonanza" width={300} height={200} />
+              </div>
+
                             <div className=" w-full h-full">
                                 <ReactPlayer url="https://youtu.be/ILuvSo5gw6w" width="100%" height="100%" />
                             </div>

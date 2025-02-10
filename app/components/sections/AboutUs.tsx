@@ -8,7 +8,7 @@ const AboutUs: React.FC = () => {
             <div className="absolute hidden md:block h-[1052px] w-[277px] bg-[#9A59BA] rounded-[100%] -top-[30rem] -right-[8rem] rotate-[45deg] blur-[390px] "></div>
             
             {/* Heading */}
-            {/* <SectionHeader title="About Us" /> */}
+            
             <div className="relative">
                 <div className="hidden md:block absolute -left-[1615px] top-[10px] h-2 w-[100rem] bg-[#49255C]"></div>
                 About us

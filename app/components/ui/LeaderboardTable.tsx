@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FaMedal, FaUser } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import Image from "next/image";
 
 const medalImages: { [key: number]: string } = {

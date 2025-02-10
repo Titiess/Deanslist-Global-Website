@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 
 const Branches: React.FC = () => {
     return (
@@ -16,7 +17,6 @@ const Branches: React.FC = () => {
                 {/* Left Content */}
                 <div className="flex flex-col relative md:pt-[30px]">
                     <div className="p-4">
-                        {/* <SectionHeader title="Branches" /> */}
                         <h4 className="text-white text-[36px] tracking-[1px] font-semibold mb-4">Our Regional <span className="font-light font-editorial-new">States</span></h4>
                         <h5 className="text-[20px] text-[#C0C3CE]">Countries in which you can find us IRL and visit our <br /> branches.</h5>
                     </div>
@@ -26,11 +26,13 @@ const Branches: React.FC = () => {
                 <div className="flex flex-col gap-8 md:py-14 md:p-14 p-4">
                     {/* Card1 */}
                     <div className="flex flex-col min-w-[280px] md:w-[685px] md:h-36 border-2 border-[#51CC8B] rounded-lg pl-3 pt-1 pr-3 p-6 relative">
-                        <img src="dlngimage.png" alt="Image Description" className="absolute right-0 top-0 h-full w-1/2 object-cover" />
+                        <div className="absolute right-0 top-0 h-full w-1/2">
+                            <Image src="/dlngimage.png" alt="Image Description" fill className="object-cover" />
+                        </div>
                         <div className="relative z-10 mt-5">
                             <div className="flex items-center">
                                 <h2>Deanslist NG</h2>
-                                <img src="flag-nigeria.png" alt="Nigeria Flag" className="absolute top-0 left-0 w-6 h-6 ml-24" />
+                                <Image src="/flag-nigeria.png" alt="Nigeria Flag" width={24} height={24} className="ml-24" />
                             </div>
                             <div className="flex flex-col md:flex-row pt-5 gap-16">
                                 <h3>Visit our regional office to get in touch with DeanslistNG community members and learn more about us.</h3>
@@ -43,11 +45,13 @@ const Branches: React.FC = () => {
                     </div>
                     {/* Card2 */}
                     <div className="rounded-lg relative flex flex-col min-w-[280px] md:w-[685px] md:h-36 border-2 pl-3 pt-1 pr-3 p-6 border-[#D6BE16]">
-                        <img src="dlbrimage.png" alt="Image Description" className="absolute right-0 top-0 h-full w-1/2 object-cover" />
+                        <div className="absolute right-0 top-0 h-full w-1/2">
+                            <Image src="/dlbrimage.png" alt="Image Description" fill className="object-cover" />
+                        </div>
                         <div className="relative z-10 mt-5">
                             <div className="flex items-center">
                                 <h2>Deanslist BR</h2>
-                                <img src="flag-brazil.png" alt="Brazil Flag" className="absolute top-0 left-0 w-6 h-6 ml-24" />
+                                <Image src="/flag-brazil.png" alt="Brazil Flag" width={24} height={24} className="ml-24" />
                             </div>
                             <div className="flex flex-col md:flex-row pt-5 gap-16">
                                 <h3>Visit our regional office to get in touch with DeanslistBR community members and learn more about us.</h3>

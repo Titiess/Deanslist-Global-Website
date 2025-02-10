@@ -1,6 +1,6 @@
-"use client"; 
+"use client";  
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { FaArrowUp } from "react-icons/fa";
 
 interface CountdownTimerProps {
@@ -8,7 +8,7 @@ interface CountdownTimerProps {
 }
 
 const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
-  const calculateTimeLeft = () => {
+  const calculateTimeLeft = useCallback(() => {
     const difference = new Date(targetDate).getTime() - new Date().getTime();
     if (difference > 0) {
       return {
@@ -19,19 +19,20 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
       };
     }
     return { days: 0, hours: 0, minutes: 0, seconds: 0 }; 
-  };
+  }, [targetDate]); 
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
+
     return () => clearInterval(timer);
-  }, [targetDate]);
+  }, [calculateTimeLeft]); 
 
   return (
-    <div className="flex flex-col items-center  text-white p-4 rounded-lg  w-[300px]">
+    <div className="flex flex-col items-center text-white p-4 rounded-lg w-[300px]">
       <h2 className="text-lg font-semibold mb-2">Deadline</h2>
 
       {/* Time Display */}
@@ -39,7 +40,7 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
         {Object.entries(timeLeft).map(([label, value]) => (
           <div
             key={label}
-            className="flex flex-col items-center  p-3 rounded-md w-16"
+            className="flex flex-col items-center p-3 rounded-md w-16"
           >
             <span className="text-2xl font-bold">
               {String(value).padStart(2, "0")}
@@ -50,8 +51,8 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
       </div>
 
       {/* Button */}
-      <button className="w-[300px] h-[40px] mt-4 bg-[#9A59BA80] hover:bg-[#9b5fd2] text-white py-2 px-4 rounded-md text-sm font-medium flex flex-row justify-center ]">
-        Rank Up Now!  <FaArrowUp className=" ml-[2px] mt-[3.5px] " />
+      <button className="w-[300px] h-[40px] mt-4 bg-[#9A59BA80] hover:bg-[#9b5fd2] text-white py-2 px-4 rounded-md text-sm font-medium flex flex-row justify-center">
+        Rank Up Now! <FaArrowUp className="ml-[2px] mt-[3.5px]" />
       </button>
     </div>
   );
