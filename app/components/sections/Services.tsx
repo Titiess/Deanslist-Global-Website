@@ -12,7 +12,11 @@ const Services = () => {
             <div className="absolute  md:h-[1052px] md:w-[277px] bg-[#9A59BA] rounded-[100%] -top-[10rem] -left-[8rem] -rotate-[45deg] blur-[390px] "></div>
             <div className="absolute  md:h-[1052px] md:w-[277px] bg-[#9A59BA] rounded-[100%] -top-[0rem] -right-[8rem] rotate-[45deg] blur-[390px] "></div>
 
-            <SectionHeader title="Services" />
+            {/* <SectionHeader title="Services" /> */}
+            <div className="  -top-10 relative flex justify-center">
+                <div className=" hidden md:block absolute -left-[955px] top-[10px] h-2 w-[100rem] bg-[#49255C]"></div>
+				Services
+            </div>
             {/* Header Section */}
             <div className="md:text-center px-5 mb-12">
                 <h2 className="text-4xl font-bold">
