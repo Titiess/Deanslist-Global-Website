@@ -1,6 +1,6 @@
 'use client';
 
-import SectionHeader from "../ui/SectionHeader";
+
 import ReactPlayer from "react-player";
 import Image from "next/image";
 

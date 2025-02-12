@@ -1,5 +1,5 @@
 import TestimonialCard from "../ui/TestimonialCard";
-import SectionHeader from "../ui/SectionHeader";
+
 
 
 const testimonials = [
