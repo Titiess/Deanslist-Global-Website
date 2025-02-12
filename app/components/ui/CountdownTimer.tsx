@@ -32,8 +32,8 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   }, [calculateTimeLeft]); 
 
   return (
-    <div className="flex flex-col items-center text-white p-4 rounded-lg w-[300px]">
-      <h2 className="text-lg font-semibold mb-2">Deadline</h2>
+    <div className="flex flex-col items-center text-white p-4 rounded-lg w-[300px] pt-0">
+      <h2 className="text-lg font-semibold mb-2 text-[#94969C]">Deadline</h2>
 
       {/* Time Display */}
       <div className="flex justify-center gap-3 text-center">
@@ -42,10 +42,11 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
             key={label}
             className="flex flex-col items-center p-3 rounded-md w-16"
           >
-            <span className="text-2xl font-bold">
+             <span className="text-xs uppercase text-[#94969C]">{label}</span>
+            <span className="text-2xl font-bold ">
               {String(value).padStart(2, "0")}
             </span>
-            <span className="text-xs uppercase text-gray-300">{label}</span>
+           
           </div>
         ))}
       </div>
