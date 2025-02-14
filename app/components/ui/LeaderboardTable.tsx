@@ -94,7 +94,10 @@ const LeaderboardTable = () => {
                 </td>
                 <td className="py-3 whitespace-nowrap">
                   <span>{user.governance}</span>
-                    <span className="inline-flex items-center justify-center bg-gradient-to-r from-[#015570] to-[#22C5F9] text-white text-sm px-2 py-1 rounded-2xl ml-2">
+                    <span className="inline-flex items-center justify-center bg-gradient-to-r from-[#015570] to-[#22C5F9] text-white text-xs px-1 py-0.5 rounded-xl ml-2">
+                       <FaBolt className="text-white text-sm mr-1" /> 4.0x
+                    </span>
+                    <span className="inline-flex items-center justify-center bg-gradient-to-r from-[#015570] to-[#22C5F9] text-white text-xs px-1 py-0.5 rounded-xl ml-2">
                        <FaBolt className="text-white text-sm mr-1" /> 4.0x
                     </span>
                 </td>

@@ -46,9 +46,10 @@ const LeaderboardPage: React.FC = () => {
       <h4 className="text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#27CBFF] via-white to-[#27CBFF]">
         Governance Multiplier
       </h4>
-      <span className="flex items-center bg-gradient-to-r from-[#015570] to-[#22C5F9] text-white text-sm px-2 py-1 rounded-2xl">
-        <FaBolt className="text-white text-sm" /> 1.0x
-      </span>
+      <span className="flex items-center bg-gradient-to-r from-[#015570] to-[#22C5F9] text-white text-xs px-1 py-0.5 rounded-xl">
+  <FaBolt className="text-white text-xs" /> 1.0x
+</span>
+
     </div>
 
     <div className="flex items-center gap-2 mt-2">
@@ -56,7 +57,7 @@ const LeaderboardPage: React.FC = () => {
       <h4 className="text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#C69BF9] to-white">
         NFT Multiplier
       </h4>
-      <span className="flex items-center bg-gradient-to-r from-[#3B1A51] to-[#853BB7] text-white text-sm px-2 py-1 rounded-2xl">
+      <span className="flex items-center bg-gradient-to-r from-[#3B1A51] to-[#853BB7] text-white text-xs px-1 py-0.5 rounded-xl">
         <FaBolt className="text-white text-sm" /> 1%
       </span>
     </div>
@@ -75,11 +76,11 @@ const LeaderboardPage: React.FC = () => {
       {/* Rewards Section */}
       <div className="w-full sm:w-[75%] mx-auto flex justify-between items-center border-2 border-[#BDECC3] rounded-lg mt-5 p-6 bg-[#061E1EBA]">
   <div className="flex flex-col gap-4">
-    <h5 className="text-[#BDECC3] font-semibold text-lg flex items-center gap-2">
+    <h5 className="text-[#BDECC3] font-semibold text-base sm:text-lg flex items-center gap-2">
       <Image src="/trip.png" alt="Trip" width={30} height={30} />
       Top 5: Free Trip to ThailandDAO
     </h5>
-    <h4 className="text-white text-lg flex items-center gap-2">
+    <h4 className="text-white text-base sm:text-lg flex items-center gap-2">
       <Image src="/cele.png" alt="C" width={30} height={30} />
       Top 50: VIP Event and Parties
     </h4>
